@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadWebSiteSource(boolean b) {
         if(!b){
             String cache = Paper.book().read("cache");
-            if(cache != null && !cache.isEmpty())// have cache
+            if(cache != null && !cache.isEmpty() )// have cache
             {
                 WebSite webSite = new Gson().fromJson(cache, WebSite.class); // convert cache form json to object
                 sourceAdapter = new ListSourceAdapter(this, webSite); // get data

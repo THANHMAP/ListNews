@@ -8,7 +8,7 @@ import java.util.List;
 
 public class WebSite {
     public String status;
-    public List<Source> sourceList;
+    public List<Source> sources;
 
     public WebSite() {
 
@@ -16,7 +16,7 @@ public class WebSite {
 
     public WebSite(String status, List<Source> sourceList) {
         this.status = status;
-        this.sourceList = sourceList;
+        this.sources = sourceList;
     }
 
     public String getStatus() {
@@ -28,10 +28,10 @@ public class WebSite {
     }
 
     public List<Source> getSourceList() {
-        return sourceList;
+        return sources;
     }
 
     public void setSourceList(List<Source> sourceList) {
-        this.sourceList = sourceList;
+        this.sources = sourceList;
     }
 }

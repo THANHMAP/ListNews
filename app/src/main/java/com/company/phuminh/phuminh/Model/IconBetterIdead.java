@@ -10,7 +10,7 @@ import java.util.List;
 
 public class IconBetterIdead {
     private String url;
-    private List<Icon> iconList;
+    private List<Icon> icons;
 
     public String getUrl() {
         return url;
@@ -21,10 +21,10 @@ public class IconBetterIdead {
     }
 
     public List<Icon> getIconList() {
-        return iconList;
+        return icons;
     }
 
     public void setIconList(List<Icon> iconList) {
-        this.iconList = iconList;
+        this.icons = iconList;
     }
 }

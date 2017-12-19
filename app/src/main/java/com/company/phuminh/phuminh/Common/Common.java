@@ -20,4 +20,13 @@ public class Common {
     public static IconBetterIdeaService getIconBetterIdeaService(){
         return IconBetterIdeaClient.getClient().create(IconBetterIdeaService.class);
     }
+
+    public static String getAPIUrl(String source, String sortBy, String apiKey){
+        StringBuilder apiUrl = new StringBuilder(BASE_URL + "v1/articles?source=");
+        return apiUrl.append(source)
+                .append("&sortBy=")
+                .append(sortBy)
+                .append("&apikey=")
+                .append(apiKey).toString();
+    }
 }
